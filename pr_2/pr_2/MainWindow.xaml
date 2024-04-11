@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr_2"
         mc:Ignorable="d"
-        Title="СДЕЛАЛ ЯЯЯЯ" Height="450" Width="800">
+        Title="Registration" Height="450" Width="800">
     <Grid Background="Gray">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -13,20 +13,19 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Label Content="Name:"/>
-                <TextBox x:Name="nameTextBox" Width="200" Height="20"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="First name:"/>
+                <TextBox x:Name="firstNameTextBox" Width="150" Height="20"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Label Content="Surname:"/>
-                <TextBox x:Name="surnameTextBox" Width="200" Height="20"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Second name:"/>
+                <TextBox x:Name="secondNameTextBox" Width="150" Height="20"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Label Content="Birthday:"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Birthday date:"/>
                 <DatePicker IsTodayHighlighted="True" x:Name="birthdayDatePicker"/>
             </StackPanel>
-            <Button Content="Добавить" Width="200" Click="addPersonbtn"/>
-            <Label Content="Я шокирован, что сделал это:"/>
+            <Button Content="Sign up" Width="200" Click="signUpButton"/>
         </StackPanel>
     </Grid>
 </Window>

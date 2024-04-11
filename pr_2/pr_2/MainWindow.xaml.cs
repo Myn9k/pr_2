@@ -25,11 +25,16 @@ namespace pr_2
             InitializeComponent();
         }
 
-        private void addPersonbtn(object sender, RoutedEventArgs e)
+        private void signUpButton(object sender, RoutedEventArgs e)
         {
-            Person.Name = nameTextBox.Text;
-            Person.Surname = surnameTextBox.Text;
-            Person.Birthday = birthdayDatePicker.Text;
+            if(firstNameTextBox.Text == "" || secondNameTextBox.Text == "" || birthdayDatePicker.Text == "")
+            {
+                MessageBox.Show("Enter your information!");
+                return;
+            }
+            Person.firstName = firstNameTextBox.Text;
+            Person.secondName = secondNameTextBox.Text;
+            Person.birthdayDate = birthdayDatePicker.Text;
             Person.getInformation();
         }
     }
